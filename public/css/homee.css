@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+#nav-checkbox, .nav-toggle{
+  display: none;
+}
+
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("../images/foto.png") no-repeat fixed bottom / cover;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+
+/*Bagian Container Card beserta form*/
+.container-card {
+  background-color: #fff; 
+  padding: 20px;
+  margin-top: -430px; /* Mengangkat container card di atas container biru */
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.613);
+  max-width: 900px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  height: auto; /* Ubah ketinggian agar dapat menampung konten yang lebih tinggi */
+   background-image: url("nama_gambar.jpg");
+}
+
+.info-tiket{
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.container-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%; /* Lebar elemen form mengikuti lebar kontainer */
+}
+
+.form-dari{
+  margin-bottom: 20px;
+  width: 430px; 
+}
+
+.form-row1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Lebar elemen form mengikuti lebar kontainer */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Tambahkan tebal pada label */
+  font-size: small;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: calc(100% - 20px); /* Lebar input mengikuti lebar kontainer dengan padding 10px */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Tambahkan border agar input terlihat jelas */
+  border-radius: 5px; /* Tambahkan sudut melengkung pada input */
+}
+
+button[type="submit"] {
+  display: block;
+  width: 200px; /* Lebar tombol mengikuti lebar kontainer dengan padding 10px */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px; /* Tambahkan sudut melengkung pada tombol */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Tambahkan efek transisi pada perubahan warna latar belakang tombol */
+}
+
+button[type="submit"]:hover {
+  background-color: #337336;
+}
+
+/*-----------------*/
+
+
+
+
+/*BAGIAN CONTAINER BAWAH */
+.container-bawah {
+  background-color: #fff; 
+  padding: 20px;
+  margin-top: 140px; /* Mengangkat container card di atas container biru */
+  border-radius: 40px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 100%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  height: 2000px; /* Ubah ketinggian agar dapat menampung konten yang lebih tinggi */
+}
+
+
+
+
+
+/* -----------------*/
+.hero a:hover{
+  background: #c00101;
+}
+
+.content{
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.content p{
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  transition: background-color 0.5 ease ;
+}
+
+.logo h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.nav-menu li{
+  display: inline-block;
+}
+
+.nav-menu li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.nav-menu li a:hover{
+  color: #ffffff;
+}
+
+.active{
+  background: #ffffff;
+}
+
+.active a:hover{
+  color: #cf1d1d !important;
+
+}
+
+.active .nav-menu li a{
+  color: #030000;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.nav-menu li a:hover{
+  color: #7a12d4;
+}
+
+.active .logo h2{
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.containerPutih {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 100px;
+  }
+
+@media only screen and (max-width: 600px){
+  header{
+    display: block;
+  }
+
+  .logo{
+    margin-left: 15px;
+  }
+
+  .nav-toggle{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 1rem;
+    top: 25px;
+    right : 0;
+  }
+
+  .nav-toggle img{
+    width: 25px;
+  }
+
+  .close,
+  input[type='checkbox']{
+    display: none;
+
+  }
+
+  #nav-checkbox:checked ~ .nav-menu{
+    background: #cc0000;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+
+  }   
+
+  .nav-menu li{
+    display: none;
+    margin: 10px 0;
+
+  }
+
+  #nav-checkbox:checked ul.nav-menu li{
+    display: block;
+  }  
+
+  #nav-checkbox:checked label.nav-toggle .open{
+    display: none;
+  }  
+
+  #nav-checkbox:checked label.nav-toggle .close{
+    display: block;
+  }  
+
+
+  ::placeholder{
+    color: black;
+  }
+  
+  .result-box {
+      position: absolute;
+      width: calc(100% - 2px); /* Lebar sesuai dengan input */
+      max-height: 200px; /* Maksimum tinggi dropdown */
+      overflow-y: auto; /* Biarkan dropdown scrollable jika melebihi maksimum tinggi */
+      background-color: #fff; /* Warna latar belakang */
+      border: 1px solid #ccc; /* Garis tepi */
+      border-top: none; /* Hilangkan garis tepi bagian atas */
+      z-index: 1000; /* Pastikan tampil di atas elemen lain */
+      display: none; /* Defaultnya tidak ditampilkan */
+  }
+  
+  .dropdown-item {
+      padding: 8px 12px; /* Padding item dropdown */
+      cursor: pointer; /* Tambahkan efek cursor pointer */
+  }
+  
+  .dropdown-item:hover {
+      background-color: #f2f2f2; /* Warna latar belakang saat item dropdown dihover */
+  }
+
+
+
+}

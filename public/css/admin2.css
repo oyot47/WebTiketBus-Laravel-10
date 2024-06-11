@@ -1,0 +1,355 @@
+.brand-text {
+    font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
+    font-size: 24px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+    letter-spacing: 2px; /* Spasi antar huruf */
+    /* Anda dapat menambahkan properti gaya tambahan sesuai keinginan Anda */
+}
+
+.gray-container {
+background-color: rgba(255, 255, 255, 0.671); /* Warna abu-abu */
+padding: 10px; /* Padding tambahan jika diperlukan */
+border-radius: 10px; /* Bentuk sudut */
+/* Tambahan gaya CSS lainnya sesuai kebutuhan */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.white-container {
+background-color: rgb(255, 255, 255); /* Warna abu-abu */
+padding: 10px; /* Padding tambahan jika diperlukan */
+border-radius: 10px; /* Bentuk sudut */
+/* Tambahan gaya CSS lainnya sesuai kebutuhan */
+display: inline-block;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Mengatur flex-container agar bus-container dan fasilitas-container berada dalam satu baris */
+    justify-content: space-between; /* Untuk menyisipkan ruang di antara .bus-container dan .fasilitas-container */
+}
+
+.bus-container, .fasilitas-container {
+    flex-grow: 1; /* Agar bus-container dan fasilitas-container dapat mengambil ruang yang tersedia dalam flex-container */
+}
+
+.bus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fasilitas-container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px; /* Menambahkan jarak di atas fasilitas-container */
+    margin-left: 20px; /* Menambahkan jarak di kiri fasilitas-container */
+    
+}
+.jenis-container {
+  display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+}
+
+.fasilitas_container2 {
+background-color: white; /* Warna latar belakang putih */
+padding: 5px; /* Padding untuk ruang ekstra di dalam container */
+border-radius: 10px; /* Sudut bulat */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk menambah dimensi */
+border: 1px solid black;
+}
+
+.gray-container .fasilitas-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*CSS TIKET*/
+.jadwal-container {
+background-color: #fff; /* Warna latar belakang putih */
+margin-bottom: 20px; /* Jarak antara container */
+padding: 15px; /* Padding dalam container */
+border-radius: 5px; /* Border radius agar tampilan lebih menarik */
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Shadow untuk efek tiga dimensi */
+width: 1000px;
+height: auto;
+}
+
+
+
+
+.bus-info {
+margin-bottom: 10px; /* Jarak antara nama bus dan informasi jadwal */
+}
+
+.nama-bus {
+font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+font-weight: bold; /* Atau ubah ke bold jika diperlukan */
+margin-bottom: 0px;
+}
+
+.jenis-bus {
+margin-top: 0px; /* Menambahkan jarak antara jenis bus dan kota asal */
+font-size: 14px; /* Ubah ukuran teks sesuai kebutuhan */
+font-weight: 500;
+opacity: 0.8;
+}
+
+.column2 {
+float: left;
+width: 1000px;
+padding: 0px;
+height: 100px; /* Should be removed. Only for demonstration */
+}
+
+.columndetail {
+float: left;
+width: 1000px;
+padding: 0px;
+height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.garis_verikal{
+border-left: 1px black solid;
+height: 50px;
+width: 0px;
+opacity: 0.8;
+}
+
+.btn-pilih {
+background-color: #4CAF50; /* Warna latar belakang hijau */
+border: none; /* Tidak ada border */
+color: white; /* Warna teks putih */
+padding: 8px 20px; /* Padding di dalam tombol */
+text-align: center; /* Teks rata tengah */
+text-decoration: none; /* Hapus dekorasi teks */
+display: inline-block; /* Tampilkan sebagai inline block */
+font-size: 14px; /* Ukuran teks */
+margin: 4px 2px; /* Margin di antara tombol */
+cursor: pointer; /* Pointer mouse saat diarahkan ke tombol */
+border-radius: 8px; /* Border radius untuk tampilan bulat */
+width: 100%;
+height: auto;
+}
+
+.btn-pilih:hover {
+background-color: #45a049; /* Warna latar belakang yang berbeda saat mouse diarahkan ke tombol */
+}
+
+.harga {
+color: #ff6600; /* Warna teks oranye */
+font-size: 25px; /* Ukuran teks */
+font-weight: 700; /* Teks bold */
+margin-bottom: 5px; /* Jarak bawah */
+}
+
+.gray-container2 {
+background-color: rgba(255, 255, 255, 0.671);
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fasilitas-container3 {
+display: grid;
+grid-template-columns: repeat(2, auto);
+gap: 5px;
+}
+
+.fasilitas-item {
+display: flex;
+align-items: center;
+}
+
+.fasilitas-item i {
+margin-right: 5px;
+}
+
+.fasilitas-item span {
+font-size: 14px;
+font-weight: 400;
+}
+
+/* Turunkan ke bawah setelah dua fasilitas */
+.fasilitas-item:nth-child(odd) {
+grid-column: 1;
+margin-bottom: 10px;
+margin-right: 20px;
+}
+
+.fasilitas-item:nth-child(even) {
+grid-column: 2;
+margin-bottom: 10px;
+}
+
+.raleway-font {
+font-family: "Raleway", sans-serif;
+font-optical-sizing: auto;
+
+font-style: normal;
+}
+
+.refund-info {
+display: flex;
+flex-direction: column;
+}
+
+.other-info {
+ /* Sesuaikan margin atas sesuai kebutuhan */
+margin-left: 19px
+}
+
+
+.refund-info p {
+margin-right: 10px; /* Menambahkan margin kanan antara ikon dan teks */
+}
+
+.transparent-container {
+background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang transparan */
+padding: 10px; /* Padding untuk ruang di dalam container */
+border-radius: 10px; /* Sudut bulat */
+width: auto; /* Lebar container mengikuti konten */
+height: auto; /* Tinggi container mengikuti konten */
+}
+
+/* Tambahan gaya CSS lainnya sesuai kebutuhan */
+
+
+/*CSS UNTUK TIMELINE*/
+
+.timeline-frame {
+    position: relative;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline-frame:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(69, 171, 5);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 2px;
+  }
+  
+  /* timeline-contain around content */
+  .timeline-frame .timeline-contain {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-frame .timeline-contain::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 2px solid #FF9F55;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the timeline-contain to the left */
+  .timeline-frame .left {
+    left: 0;
+  }
+  
+  /* Place the timeline-contain to the right */
+  .timeline-frame .right {
+    left: 51%;
+  }
+  
+  /* Add arrows to the left timeline-contain (pointing right) */
+  .timeline-frame .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+  }
+  
+  /* Add arrows to the right timeline-contain (pointing left) */
+  .timeline-frame .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+  }
+  
+  /* Fix the circle for timeline-contains on the right side */
+  .timeline-frame .right::after {
+    left: -16px;
+  }
+  
+  /* The actual konten */
+  .timeline-frame .konten {
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: auto;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+  .timeline-frame::after {
+      left: 8%;
+      margin-left: 0px;
+  }
+    
+    /* Full-width timeline-contains */
+    .timeline-frame .timeline-contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-frame .timeline-contain::before {
+    left: 60px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .timeline-frame .left::after, .timeline-frame .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right timeline-contains behave like the left ones */
+    .timeline-frame .right {
+    left: 0%;
+    }
+  }
