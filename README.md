@@ -38,21 +38,31 @@ Sebelum menginstal proyek ini, pastikan Anda memiliki:
 Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan proyek ini di lingkungan lokal Anda.
 
 1. **Clone Repository**
-   -git clone https://github.com/username/WebTiketBus-Laravel-10.git
-   -cd WebTiketBus-Laravel-10
+   ```
+   git clone https://github.com/username/WebTiketBus-Laravel-10.git
+   cd WebTiketBus-Laravel-10
+   ```
 
-2. **Install dependencies**
-   -composer install
-   -npm install
+3. **Install dependencies**
+   ```
+   composer install
+   npm install
+   ```
 
-3. **Generate Key Aplikasi**
-   -php artisan key:generate
-   -php artisan storage:link
+5. **Generate Key Aplikasi**
+   ```
+   php artisan key:generate
+   php artisan storage:link
+   ```
 
-4. **Migrasi dan Seed Database**
-   -php artisan migrate --seed
+7. **Migrasi dan Seed Database**
+   ```
+   php artisan migrate --seed
+   ```
 
-5. **Jalankan serve**
-   -php artisan serve
+9. **Jalankan serve**
+   ```
+   php artisan serve
+   ```
 
 
